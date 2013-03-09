@@ -1,0 +1,110 @@
+body{
+	background-image : url('background.png');
+	/*background: url('page_background.gif');*/
+	height : 100%;
+	min-height: 100%;
+	line-height: 1.4em;
+	font: 16px/1.5 "PT Sans",Arial,sans-serif;
+}
+
+.inner{
+	margin-top : 100px;
+	/*
+		background: rgba(0,0,0,0.02);
+		border-radius: 6px;
+		box-shadow: inset 1px 1px rgba(0,0,0,0.07),1px 1px rgba(255,255,255,0.5);
+	*/
+	padding : 20px 0px;
+	height: 550px;
+	margin-bottom : 200px;
+}
+
+.inner .s-input{
+	font-size: 22px;
+	-webkit-appearance: textfield;
+	width: 500px;
+	padding: 17px 0 15px 50px;
+	margin-right: 10px;
+	border-radius: 3px;
+	color: #333;
+	font-weight: 300;
+	background: #fff url('search.png') 10px 50% no-repeat;
+	opacity: 0.99;
+	box-shadow: 2px 2px rgba(0,0,0,0.05);
+	border: none;
+	outline: none;
+}
+.inner .s-find{
+	position: relative;	
+	color: rgba(83, 83, 83, 1);
+	background: #fbf47c;
+	border-radius: 4px;
+	box-shadow: 2px 2px rgba(0,0,0,0.2);
+	line-height: 1.8;
+	-webkit-transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
+	-moz-transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
+	-ms-transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
+	-o-transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
+	transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
+	border: none;
+	outline: none;
+	font-size: 20px;
+	border-radius: 3px;
+	padding: 10px 11px 5px;
+	font-weight: 700;
+}
+.inner .s-find:active, .inner .s-find:focus{
+	box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .1);
+	background: rgb(253, 245, 104);
+}
+
+.inner a{
+	color: rgb(124, 123, 112);
+	font-size : 16px;
+	font-weight: bold;
+}
+
+
+footer{
+	background: url('page_background.gif');
+	clear: both;
+	position: relative;
+	z-index: 60;
+	color : white;
+	width : 100%;
+	height: 50px;
+}
+footer p{
+	margin : 0px;
+	font-size : 1.6em;
+}
+
+.post{
+	border-radius: 6px;
+	box-shadow: 2px 2px rgba(0,0,0,0.1);
+	background-color: #FFF;
+	width : 680px;
+	margin-top : 20px;
+	position: relative;
+}
+.post h4{
+	padding: 20px;
+	line-height: 1;
+	margin: 0;
+	background: url('divider_dashed.png') bottom left repeat-x;
+}
+.post:before{
+	content: '';
+	display: block;
+	position: absolute;
+	background: url('paperclip_blog.png');
+	height: 54px;
+	right: 10px;
+	top: -9px;
+	width: 40px;
+	z-index: 100;
+}
+
+.post .content{
+	padding: 20px 10px;
+}
