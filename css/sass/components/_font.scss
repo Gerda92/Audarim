@@ -22,14 +22,18 @@
 
 .icon{
 	font-family: "entypo";
-	line-height: 0;
-	font-size : 20px;
+	line-height: normal;
+	font-size : 23px;
 	text-align: center;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	text-shadow: none;
+	vertical-align: middle;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
 }
 .icon-social{
 	font-family: "entypo-social";

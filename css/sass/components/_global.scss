@@ -12,10 +12,13 @@ body{
 	max-width : 1500px;
 }
 
+/*
+* Header
+*/
 header{
 	position: relative;
 	display: block;
-	margin-bottom : 80px;
+	margin-bottom : 60px;
 	.row{
 		background: white;
 		border-bottom-left-radius: 6px;
@@ -46,11 +49,17 @@ header{
 }
 
 
-
+/*
+* Application area
+*/
 .application-area{
 	min-height: 340px;
 }
 
+
+/*
+* Footer
+*/
 footer{
 	padding : 90px 20px 40px;
 	.wrap{
