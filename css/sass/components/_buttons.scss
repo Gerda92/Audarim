@@ -1,0 +1,13 @@
+.btn{
+	-webkit-transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
+	-moz-transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
+	-ms-transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
+	-o-transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
+	transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
+	border: none;
+	outline : none;
+	border-radius: 3px;
+	padding: 10px 11px 5px;
+	font-weight: 700;
+	position: relative;
+}

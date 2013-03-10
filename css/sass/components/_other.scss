@@ -1,6 +1,6 @@
 body{
-	background-image : url('background.png');
-	/*background: url('page_background.gif');*/
+	background-image : url('images/background.png');
+	/*background: url('images/page_background.gif');*/
 	height : 100%;
 	min-height: 100%;
 	line-height: 1.4em;
@@ -30,7 +30,7 @@ body{
 	border-radius: 3px;
 	color: #333;
 	font-weight: 300;
-	background: #fff url('search.png') 10px 50% no-repeat;
+	background: #fff url('images/search.png') 10px 50% no-repeat;
 	opacity: 0.99;
 	box-shadow: 2px 2px rgba(0,0,0,0.05);
 	border: none;
@@ -68,7 +68,7 @@ body{
 
 
 footer{
-	background: url('page_background.gif');
+	background: url('images/page_background.gif');
 	clear: both;
 	position: relative;
 	z-index: 60;
@@ -93,13 +93,13 @@ footer p{
 	padding: 20px;
 	line-height: 1;
 	margin: 0;
-	background: url('divider_dashed.png') bottom left repeat-x;
+	background: url('images/divider_dashed.png') bottom left repeat-x;
 }
 .post:before{
 	content: '';
 	display: block;
 	position: absolute;
-	background: url('paperclip_blog.png');
+	background: url('images/paperclip_blog.png');
 	height: 54px;
 	right: 10px;
 	top: -9px;

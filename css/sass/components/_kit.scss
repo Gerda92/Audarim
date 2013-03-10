@@ -1,0 +1,57 @@
+/*display style*/
+.hide{
+  display: none;
+}
+.block{
+  display: block;
+}
+.inline{
+  display: inline;
+}
+.inline-block{
+  display: inline-block;
+}
+.hidden{
+  visibility: hidden;
+}
+
+/*backgrounds*/
+.bg-white{
+  background: white;
+}
+.bg-inherit{
+  background: inherit;
+}
+
+
+/*shadows*/
+.box-shadow{
+  box-shadow: 2px 2px rgba(0,0,0,0.1);
+}
+
+/*sizes*/
+.pad-tb{
+  padding : 20px inherit;
+}
+
+/*alignes*/
+.vertical-super{
+  vertical-align: super;
+}
+.align-center{
+  text-align: center;
+}
+.align-right{
+  text-align: right;
+}
+.align-left{
+  text-align: left;
+}
+
+/*font*/
+.bold{
+  font-weight: bold;
+}
+.green{
+  color : green;
+}
