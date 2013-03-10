@@ -979,9 +979,9 @@ input.input-search {
   font-size: 15px; }
   .share .links {
     padding-left: 20px;
-    position: relative;
-    top: -5px;
-    display: inline; }
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 0; }
 
 a {
   color: white; }
@@ -1019,7 +1019,6 @@ a {
   font-family: "entypo-social";
   line-height: 0;
   color: black;
-  display: inline-block;
   font-size: 46px;
   text-align: center;
   -webkit-user-select: none;

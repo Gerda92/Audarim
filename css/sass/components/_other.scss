@@ -37,9 +37,9 @@
 	font-size : 15px;
 	.links{
 		padding-left: 20px;
-		position: relative;
-		top: -5px;
-		display: inline;
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 0;
 	}
 }
 
