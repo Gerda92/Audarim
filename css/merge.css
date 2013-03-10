@@ -1,10 +1,8 @@
-/* normalize.css v2.1.0 | MIT License | git.io/normalize */
-/* ==========================================================================
-   HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined in IE 8/9.
- */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 article,
 aside,
 details,
@@ -366,16 +364,20 @@ header {
       border: 2px solid rgba(255, 255, 255, 0.6); }
 
 footer {
-  background: url("images/page_background.gif");
-  clear: both;
-  position: relative;
-  z-index: 60;
-  color: white;
-  width: 100%;
-  height: 50px; }
-  footer p {
-    margin: 0px;
-    font-size: 1.6em; }
+  padding: 0 20px 60px; }
+  footer .wrap {
+    box-shadow: 0 2px 0 #daddde;
+    background: white;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    clear: both;
+    position: relative; }
+  footer .present {
+    font-size: 14px;
+    padding: 14px 0px; }
+    footer .present .copy {
+      color: #757474; }
 
 /* Grid HTML Classes */
 .row {
@@ -868,6 +870,15 @@ footer {
 .green {
   color: green; }
 
+.clearfix:before {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }
+
 .inner {
   margin-top: 100px;
   /*
@@ -893,29 +904,6 @@ footer {
   box-shadow: 2px 2px rgba(0, 0, 0, 0.05);
   border: none;
   outline: none; }
-
-.inner .s-find {
-  position: relative;
-  color: #535353;
-  background: #fbf47c;
-  border-radius: 4px;
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-  line-height: 1.8;
-  -webkit-transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
-  -moz-transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
-  -ms-transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
-  -o-transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
-  transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
-  border: none;
-  outline: none;
-  font-size: 20px;
-  border-radius: 3px;
-  padding: 10px 11px 5px;
-  font-weight: 700; }
-
-.inner .s-find:active, .inner .s-find:focus {
-  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1);
-  background: #fdf568; }
 
 .inner a {
   color: #7c7b70;

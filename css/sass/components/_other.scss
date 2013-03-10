@@ -26,29 +26,6 @@
 	border: none;
 	outline: none;
 }
-.inner .s-find{
-	position: relative;	
-	color: rgba(83, 83, 83, 1);
-	background: #fbf47c;
-	border-radius: 4px;
-	box-shadow: 2px 2px rgba(0,0,0,0.2);
-	line-height: 1.8;
-	-webkit-transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
-	-moz-transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
-	-ms-transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
-	-o-transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
-	transition: background 0.1s cubic-bezier(0.365, 0.005, 0.355, 1);
-	border: none;
-	outline: none;
-	font-size: 20px;
-	border-radius: 3px;
-	padding: 10px 11px 5px;
-	font-weight: 700;
-}
-.inner .s-find:active, .inner .s-find:focus{
-	box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .1);
-	background: rgb(253, 245, 104);
-}
 
 .inner a{
 	color: rgb(124, 123, 112);
