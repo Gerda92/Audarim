@@ -28,7 +28,19 @@
 	padding: 20px 10px;
 	font-size : 16px;
 }
-
+.share{
+	text-align: right;
+	padding : 0px 10px;
+	padding-bottom : 10px;
+	padding-top: 5px;
+	color : #444;
+	font-size : 15px;
+	.links{
+		padding-left: 20px;
+		position: relative;
+		top: -5px;
+	}
+}
 
 a{
 	color : white;
