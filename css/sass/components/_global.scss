@@ -15,32 +15,37 @@ body{
 header{
 	position: relative;
 	display: block;
-	padding : 4px inherit;
-	background: url('images/page_background.gif');
 	margin-bottom : 80px;
+	.row{
+		background: white;
+		border-bottom-left-radius: 6px;
+		border-bottom-right-radius: 6px;
+		box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+	}
 	a{
-		font-size : 14px;
+		font-size : 13px;
 		display: inline-block;
 		text-decoration: none;
 		outline: none;
 		position: relative;
 		border: none;
-		padding : 8px 8px;
+		padding : 8px 0px;
 		line-height: 2.0;
-		text-transform: uppercase;
 		span{
-			color: #FFF;
-			text-shadow: 1px 1px rgba(0,0,0,0.2);
 			font-weight: bold;
 			padding : 8px;
-			border : 2px solid rgba(0, 0, 0, 0);
 			border-radius : 3px;
-		}
-		span:hover{
-			border: 2px solid rgba(255,255,255,0.6);
 		}
 	}
 }
+.login{
+	color: #837666;
+}
+.registration{
+	color : rgb(59, 135, 170);
+}
+
+
 
 .application-area{
 	min-height: 340px;
