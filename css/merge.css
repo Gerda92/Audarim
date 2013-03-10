@@ -350,7 +350,8 @@ header {
   position: relative;
   display: block;
   padding: 4px inherit;
-  background: url("images/page_background.gif"); }
+  background: url("images/page_background.gif");
+  margin-bottom: 80px; }
   header a {
     font-size: 14px;
     display: inline-block;
@@ -372,7 +373,7 @@ header {
       border: 2px solid rgba(255, 255, 255, 0.6); }
 
 footer {
-  padding: 60px 20px 40px; }
+  padding: 90px 20px 40px; }
   footer .wrap {
     box-shadow: 0 2px 0 #daddde;
     background: white;
@@ -827,6 +828,31 @@ footer {
     box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
     background: #5c5c5c; }
 
+input[type="text"] {
+  font-size: 22px;
+  -webkit-appearance: textfield;
+  border-radius: 3px;
+  font-weight: 300;
+  opacity: .99;
+  border: 1px solid #dddddd;
+  outline: none;
+  padding: 7px 15px; }
+
+input.input-search {
+  font-size: 22px;
+  -webkit-appearance: textfield;
+  width: 500px;
+  padding: 17px 0 15px 50px;
+  margin-right: 10px;
+  border-radius: 3px;
+  color: #333;
+  font-weight: 300;
+  background: white url("images/search.png") 10px 50% no-repeat;
+  opacity: 0.99;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.05);
+  border: none;
+  outline: none; }
+
 /*display style*/
 .hide {
   display: none; }
@@ -887,34 +913,8 @@ footer {
 .clearfix:after {
   clear: both; }
 
-.inner {
-  margin-top: 100px;
-  /*
-  	background: rgba(0,0,0,0.02);
-  	border-radius: 6px;
-  	box-shadow: inset 1px 1px rgba(0,0,0,0.07),1px 1px rgba(255,255,255,0.5);
-  */
-  padding: 20px 0px; }
-
-.inner .s-input {
-  font-size: 22px;
-  -webkit-appearance: textfield;
-  width: 500px;
-  padding: 17px 0 15px 50px;
-  margin-right: 10px;
-  border-radius: 3px;
-  color: #333;
-  font-weight: 300;
-  background: white url("images/search.png") 10px 50% no-repeat;
-  opacity: 0.99;
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.05);
-  border: none;
-  outline: none; }
-
-.inner a {
-  color: #7c7b70;
-  font-size: 16px;
-  font-weight: bold; }
+.pad-tb-big {
+  padding: 30px inherit; }
 
 .post {
   border-radius: 6px;
@@ -954,3 +954,15 @@ a {
   src: url("font/entypo.eot?#iefix") format("embedded-opentype"), url("font/entypo.woff") format("woff"), url("font/entypo.ttf") format("truetype"), url("font/entypo.svg#entypo") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+.icon {
+  font-family: "entypo";
+  line-height: 0;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
