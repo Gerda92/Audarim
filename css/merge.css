@@ -1002,7 +1002,9 @@ a {
 .icon {
   font-family: "entypo";
   line-height: 0;
-  font-size: 21px; }
+  font-size: 21px;
+  text-align: center;
+  vertical-align: middle; }
 
 .icon-social {
   font-family: "entypo-social";
