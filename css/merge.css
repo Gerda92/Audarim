@@ -356,8 +356,7 @@ header {
   header .row {
     background: white;
     border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1); }
+    border-bottom-right-radius: 6px; }
   header a {
     font-size: 13px;
     display: inline-block;
@@ -1002,30 +1001,15 @@ a {
 
 .icon {
   font-family: "entypo";
-  line-height: normal;
-  font-size: 23px;
-  text-align: center;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-shadow: none;
-  vertical-align: middle;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block; }
+  line-height: 0;
+  font-size: 21px; }
 
 .icon-social {
   font-family: "entypo-social";
   line-height: 0;
   color: black;
   font-size: 44px;
-  text-align: center;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
+  text-align: center; }
   .icon-social:hover {
     color: #527cc5;
     cursor: pointer; }

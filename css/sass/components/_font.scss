@@ -22,18 +22,8 @@
 
 .icon{
 	font-family: "entypo";
-	line-height: normal;
-	font-size : 23px;
-	text-align: center;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	text-shadow: none;
-	vertical-align: middle;
-	-webkit-font-smoothing: antialiased;
-	display: inline-block;
+	line-height: 0;
+	font-size : 21px;
 }
 
 .icon-social{
@@ -42,11 +32,6 @@
 	color: black;
 	font-size: 44px;
 	text-align: center;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
 	&:hover{
 		color: rgb(82, 124, 197);
 		cursor: pointer;
