@@ -401,6 +401,9 @@ footer {
     padding: 14px 0px; }
     footer .present .copy {
       color: #757474; }
+  footer .text {
+    color: #757474;
+    font-size: 14px; }
 
 /* Grid HTML Classes */
 .row {
@@ -905,6 +908,24 @@ input.input-search {
 .pad-tb-big {
   padding: 30px inherit; }
 
+.small-line-after {
+  margin-bottom: 5px; }
+
+.normal-line-after {
+  margin-bottom: 10px; }
+
+.big-line-after {
+  margin-bottom: 15px; }
+
+.small-line-before {
+  margin-top: 5px; }
+
+.normal-line-before {
+  margin-top: 10px; }
+
+.big-line-before {
+  margin-top: 15px; }
+
 /*alignes*/
 .vertical-super {
   vertical-align: super; }
@@ -945,7 +966,6 @@ input.input-search {
   box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
   background-color: #FFF;
   width: 680px;
-  margin-top: 20px;
   position: relative; }
 
 .post h4 {
