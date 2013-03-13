@@ -27,7 +27,7 @@ modules.collect = (function(){
 * Starting modules
 */
 modules["typehead-module"] = (function(){
-
+	$('.example').typeahead();
 });
 modules["modal-bg-module"] = (function(){
 	var self = window;

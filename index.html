@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/merge.css">
 		<script src="js/jquery.js"></script>
+		<script src="js/hogan.js"></script>
 		<script src="js/typehead.js"></script>
 		<script src="js/modules.js"></script>
 		<script src="js/app.js"></script>
@@ -19,6 +20,13 @@
 						<div class="content">
 							Lorem ipsum eiusmod elit tempor culpa ea aute ex ex proident amet adipisicing proident in ut veniam. Lorem ipsum sint consequat cillum ullamco nulla exercitation deserunt voluptate in id irure. Lorem ipsum dolor reprehenderit nostrud incididunt commodo ad sunt non est eu exercitation eu occaecat sit culpa dolor ut deserunt proident Excepteur minim quis consectetur in voluptate nostrud officia in ut sunt proident sunt magna minim enim nostrud elit minim eiusmod ullamco dolor reprehenderit proident ullamco labore aliquip Ut eiusmod minim est nostrud dolore exercitation in dolore sit qui reprehenderit velit consectetur ea aliqua sint tempor occaecat irure tempor dolore irure deserunt reprehenderit culpa sed mollit elit anim laborum consequat dolor qui tempor deserunt occaecat Duis dolor mollit officia reprehenderit consequat sint nulla commodo cupidatat deserunt magna exercitation cillum voluptate sint est elit cillum id ut ad exercitation esse adipisicing commodo nulla ad exercitation veniam ex ut et enim proident laboris et id deserunt occaecat velit Excepteur enim et culpa et dolor reprehenderit mollit officia ut pariatur pariatur dolor ad sunt eu id dolore enim dolor laborum pariatur ad Excepteur in ut dolore et occaecat amet eiusmod exercitation reprehenderit dolor culpa id reprehenderit aute in mollit labore Excepteur dolor aute id dolor Ut velit dolor consectetur in ut velit culpa do eiusmod in reprehenderit irure laborum sint amet nostrud esse sunt commodo non esse laborum Excepteur incididunt non incididunt anim veniam ullamco pariatur culpa labore cillum anim Excepteur mollit nisi adipisicing ullamco nulla veniam eu laborum exercitation adipisicing dolor quis ut voluptate labore quis nostrud. 
 						</div>
+						<div class="adv-modal">
+							<div class="align-center">
+								<div class="adv-font">
+									Advertisement
+								</div>
+							</div>
+						</div>
 					</div>					
 				</div>
 			</div>
@@ -26,6 +34,13 @@
 		<div class="container">
 
 			<header>
+				<div class="adv">
+					<div class="row">
+						<div class="align-center adv-font">
+							Advertisement
+						</div>
+					</div>		
+				</div>
 				<div class="row">
 					<div class="large-4 columns">
 						&nbsp;
@@ -39,7 +54,7 @@
 								Войти
 							</span>
 						</a>
-						<a href="#" class="registration">
+						<a href="#" class="registration modal-open" data-modal="modal">
 							<span>
 								<icon class="icon">
 									
@@ -56,7 +71,10 @@
 				<div class="row normal-line-after">
 					<div class="large-12 align-center pad-tb-big">
 						<div class="inline">
-							<input type="text" class="input-search" placeholder="Вводите текст здесь...">
+							<input type="text" class="input-search" placeholder="Вводите текст здесь..." data-provide="typeahead" data-items="4" data-source="[
+							&quot;Человек&quot;, &quot;Яблока&quot;,&quot;Яблоня&quot;,
+							&quot;Як&quot;, &quot;Ясень&quot;,&quot;Ярус&quot;
+							]">
 							<button class="btn btn-yellow">Искать</button>
 							<button class="btn btn-black hide">Искать</button>
 							<div class="block big-line-before">
