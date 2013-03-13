@@ -102,3 +102,15 @@ modules["modal-module"] = (function(){
 	});
 	_contstructor_(); 
 });
+modules["language-change"] = (function(){
+	var _init_ = function(){
+		var btn = $("#js-swap-lan");
+		btn.bind("click", function(){
+			var s = $("#js-swap-1").html();
+			var b = $("#js-swap-2").html();
+			$("#js-swap-1").html(b);
+			$("#js-swap-2").html(s);
+		});
+	}
+	_init_.call();
+});
