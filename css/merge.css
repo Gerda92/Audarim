@@ -973,16 +973,10 @@ input.input-search {
   position: absolute!important;
   box-shadow: 3px 4px 11px rgba(12, 12, 12, 0.04);
   border: 1px solid #d9d9d9;
-  top: 0;
-  z-index: 99;
+  top: 100px;
+  z-index: 199;
   background: white;
-  padding-left: 24px;
-  padding-right: 30px;
-  padding-top: 15px;
-  padding-bottom: 20px;
-  border-radius: 5px; }
-  .modal .content {
-    z-index: 10000; }
+  padding: 15px 30px 20px 24px; }
   .modal .close-button {
     background-image: url("images/close.png");
     background-position: center;
@@ -1018,7 +1012,7 @@ input.input-search {
   right: 10px;
   top: -9px;
   width: 40px;
-  z-index: 100; }
+  z-index: 50; }
 
 .post .content {
   padding: 20px 10px;

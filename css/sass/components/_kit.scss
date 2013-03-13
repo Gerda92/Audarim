@@ -117,17 +117,10 @@
   position: absolute!important;
   box-shadow: 3px 4px 11px rgba(12, 12, 12, .04);
   border: 1px solid #D9D9D9;
-  top: 0;
-  z-index: 99;
+  top: 100px;
+  z-index: 199;
   background: white;
-  padding-left: 24px;
-  padding-right: 30px;
-  padding-top: 15px;
-  padding-bottom: 20px;
-  border-radius: 5px;
-  .content{
-    z-index: 10000;
-  }
+  padding: 15px 30px 20px 24px;
   .close-button{
     background-image: url('images/close.png');
     background-position: center;

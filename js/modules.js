@@ -49,7 +49,40 @@ modules["modal-bg-module"] = (function(){
 	sandbox["modalBack"] = _modal_controller;
 });
 modules["modal-module"] = (function(){
+	var api = {
+		modalBackOpen: function(){
+			window.sandbox.modalBack.open();
+		},
+		modalBackClose: function(){
+			window.sandbox.modalBack.close();
+		},
+		open: function(id){
+			var modal = $("#" + id);
+			modal.show();
+			this.modalBackOpen();
+		},
+		close: function(id){
+			var modal = $("#" + id);
+			modal.hide();
+			this.modalBackClose();
+		}, 
+		addCloseButtonAction: function(modal){
+			var self = this;
+			modal.find(".close-button").bind("click", function(){
+				self.close(modal.attr("id"));
+			});
+		}
+	}
 	var _contstructor_ = (function(){
-			
+		var open = $(".modal-open");
+		open.bind("click", function(){
+			var dataId = $(this).attr("data-modal");
+			if(dataId){
+				api.open(dataId);
+			}else{
+				console.log("Cannot find data-modal attribute on modal caller");
+			}
+		});
 	});
+	_contstructor_(); 
 });
