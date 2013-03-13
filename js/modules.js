@@ -33,17 +33,21 @@ modules["modal-bg-module"] = (function(){
 	var self = window;
 	var sandbox = self.sandbox;
 	var _modal_controller = {
+		time: 0,
 		modal_bg : function(){
 			var those = $(".modal-back");
 			return those;
 		},
 		open : function(){
 			var md = this.modal_bg();
-			md.show();
+			md.fadeIn(this.time);
 		},	
 		close : function(){
 			var md = this.modal_bg();
-			md.hide();
+			md.fadeOut(this.time);
+		},
+		setTimeout: function(time){
+			this.time = time;
 		}
 	}
 	sandbox["modalBack"] = _modal_controller;
@@ -56,14 +60,20 @@ modules["modal-module"] = (function(){
 		modalBackClose: function(){
 			window.sandbox.modalBack.close();
 		},
+		setModalBackTimeout: function(time){
+			var time = time || 0;
+			window.sandbox.modalBack.setTimeout(time);
+		},
 		open: function(id){
 			var modal = $("#" + id);
 			modal.show();
 			this.modalBackOpen();
+			this.addCloseButtonAction(modal);
 		},
 		close: function(id){
 			var modal = $("#" + id);
-			modal.hide();
+			modal.fadeOut(300);
+			this.setModalBackTimeout(500);
 			this.modalBackClose();
 		}, 
 		addCloseButtonAction: function(modal){
