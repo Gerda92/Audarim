@@ -81,6 +81,12 @@ modules["modal-module"] = (function(){
 			modal.find(".close-button").bind("click", function(){
 				self.close(modal.attr("id"));
 			});
+			$(window).bind("keydown.CLOSE_ACTION", function(ev){
+				if(ev.keyCode == 27){
+					self.close(modal.attr("id"));
+					$(window).unbind("keydown.CLOSE_ACTION");
+				}
+			});
 		}
 	}
 	var _contstructor_ = (function(){
