@@ -48,3 +48,8 @@ modules["modal-bg-module"] = (function(){
 	}
 	sandbox["modalBack"] = _modal_controller;
 });
+modules["modal-module"] = (function(){
+	var _contstructor_ = (function(){
+			
+	});
+});
