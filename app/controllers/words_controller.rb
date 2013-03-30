@@ -15,7 +15,7 @@ class WordsController < ApplicationController
   end
 
   def suggest
-    @suggestions = Word.asc(:name).where(:language => params['lang'], :name => /^#{params[:name]}/m)
+    @suggestions = Word.asc(:name).where(:language => params['lang'], :name => /^#{params[:name]}/m).limit(10)
 =begin
     text = ''
     @suggestions.each { |w|
@@ -26,5 +26,5 @@ class WordsController < ApplicationController
 =end
     render :json => @suggestions
   end
-  
+
 end
