@@ -1,6 +1,9 @@
 Audarim::Application.routes.draw do
 
-  match 'words/word_exist' => 'words#word_exist', via: :post
+  match 'words/:lang/:name' => 'words#define', :as => :word_definition
+  match 'words/suggest/:lang/:name' => 'words#suggest'
+  match 'words' => 'words#index'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
